@@ -149,8 +149,8 @@ main .insights .number {
     }
     main .recent-orders {
         position: absolute;
-        left: 10%;
-        top: 130%;
+        left: 5%;
+        top: 125%;
     }
     .recent-orders table {
         min-width: 1020px;
