@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body class="bg-background flex w-full h-full">
+
+    <aside class="h-full flex flex-col aside1">
+        <div class="w-full h-16 bg-primar flex relative items-center py-8 pt-12 px-5 ml-10 logo">
+            <img src="./img/logo.png" alt="" class="w-12 h-12 ">
+            <h1 class="ml-6 text-2xl font-bold dark">EGA<span class="danger">TOR</span></h1>
+            <span class="close material-icons-sharp absolute right-10 hidden">close</span>
+        </div>
+
+        <div class="asiders flex flex-col gap-y-10 mt-10 w-full text-lg font-medium ">
+            <a href="#" class="a1 flex gap-6 items-center bg-blue-100 py-4 ml-16 ps-6">
+                <span class="span1 material-icons-sharp text-3xl ">grid_view</span>
+                <h3 class="">Dashboard</h3>
+            </a>
+            <a href="#" class="flex gap-6 items-center ml-16">
+                <span class="material-icons-sharp dark span2">person_outline</span>
+                <h3 class="">Customers</h3>
+            </a>
+            <a href="#" class="flex gap-6 items-center ml-16">
+                <span class="material-icons-sharp dark span2">receipt_long</span>
+                <h3 class="">Orders</h3>
+            </a>
+            <a href="#" class="flex gap-6 items-center ml-16">
+                <span class="material-icons-sharp dark span2">insights</span>
+                <h3 class="">Analytics</h3>
+            </a>
+            <a href="#" class="flex gap-6 items-center ml-16">
+                <span class="material-icons-sharp dark span2">mail_outline</span>
+                <h3 class="">Messages</h3>
+                <span class="message_count px-3 rounded-md bg-danger text-white">26</span>
+            </a>
+            <a href="#" class="flex gap-6 items-center ml-16">
+                <span class="material-icons-sharp dark span2">inventory</span>
+                <h3 class="">Products</h3>
+            </a>
+            <a href="#" class="flex gap-6 items-center ml-16">
+                <span class="material-icons-sharp dark span2">report_gmailerrorred</span>
+                <h3 class="">Reports</h3>
+            </a>
+            <a href="#" class="flex gap-6 items-center ml-16">
+                <span class="material-icons-sharp dark span2">settings</span>
+                <h3 class="">Settings</h3>
+            </a>
+            <a href="#" class="flex gap-6 items-center ml-16">
+                <span class="material-icons-sharp dark span2">add</span>
+                <h3 class="">Add Product</h3>
+            </a>
+            <a href="#" class="logout flex gap-6 items-center ml-16 mt-32">
+                <span class="material-icons-sharp dark span2">logout</span>
+                <h3 class="">Logout</h3>
+            </a>
+        </div>
+    </aside>
+
+    <main class="pt-7 dark h-full ms-24">
+        <h3 class="text-4xl font-black">Dashboard</h3>
+        <input type="date" class="px-6 py-2 rounded-md mt-4 text-lg text-center dark:[color-scheme:dark]">
+
+        <div class="mt-6 insights w-full h-full">
+            <div class="p-8 sales">
+                <span class="span1 material-icons-sharp text-3xl w-12 h-12 rounded-full bg-primary p-2 text-center text-white">analytics</span>
+                <div class="analysis flex justify-between items-center gap-16">
+                    <div class="py-6">
+                        <h3 class="text-xl font-black pb-4">Total Sales</h3>
+                        <h1 class="text-4xl font-black ">$25,024</h1>
+                    </div>
+                    <div class="w-24 h-24 relative">
+                        <svg class="w-24 h-24">
+                            <circle class="" cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p class="dark-info font-medium">81%</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="dark-info text-xs pt-4">Last 24 Hours</p>
+            </div>
+
+            <div class="rounded-xl p-8 expenses">
+                <span class="span1 material-icons-sharp text-3xl w-12 h-12 rounded-full bg-danger p-2 text-center text-white">bar_chart</span>
+                <div class="analysis flex justify-between items-center gap-16">
+                    <div class="py-6">
+                        <h3 class="text-xl font-black pb-4 whitespace-nowrap">Total Expenses</h3>
+                        <h1 class="text-4xl font-black ">$14,160</h1>
+                    </div>
+                    <div class="w-24 h-24 relative">
+                        <svg class="w-24 h-24">
+                            <circle class="" cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p class="dark-info font-medium">62%</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="dark-info text-xs pt-4">Last 24 Hours</p>
+            </div>
+
+            <div class="rounded-xl p-8 income">
+                <span class="span1 material-icons-sharp text-3xl w-12 h-12 rounded-full bg-success p-2 text-center text-white">stacked_line_chart</span>
+                <div class="analysis flex justify-between items-center gap-16">
+                    <div class="py-6">
+                        <h3 class="text-xl font-black pb-4">Total Income</h3>
+                        <h1 class="text-4xl font-black ">$10,864</h1>
+                    </div>
+                    <div class="w-24 h-24 relative">
+                        <svg class="w-24 h-24">
+                            <circle class="" cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p class="dark-info font-medium">44%</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="dark-info text-xs pt-4">Last 24 Hours</p>
+            </div>
+        </div>
+
+        <div class="w-full h-full mt-8 recent-orders">
+            <h3 class="text-3xl font-bold mb-4">Recent Orders</h3>
+            <table class="sales w-full h-full border-separate p-8 text-center">
+                <thead>
+                    <tr>
+                        <th class="name1">Product Name</th>
+                        <th>Product Number</th>
+                        <th class="payment1">Payment</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <a href="#" class="block text-center mt-5">Show All</a>
+        </div>
+    </main>
+
+    <div class="right h-full ms-8 flex-1 dark py-4 px-10 bg-blue-10">
+        <div class="top w-full flex justify-end items-center gap-5">
+            <button class="menu hidden"><span class="material-icons-sharp">menu</span></button>
+            <div class="user bg-gray-300 rounded-md flex justify-center items-center me-4 dark-btn">
+                <span class="material-icons-sharp bg-primary text-white p-1 rounded-md" style="cursor: pointer;">light_mode</span>
+                <span class="material-icons-sharp p-1 rounded-md" style="cursor: pointer;">dark_mode</span>
+            </div>
+            <div class="user flex flex-col items-end shrink-0">
+                <p class="dark-info">Hey, <b class="dark">Hamdy</b></p>
+                <small class="dark-info">Admin</small>
+            </div>
+            <div class="logo2 w-16 h-16 rounded-full shrink-0">
+                <img src="./img/profile-1.jpg" alt="" class="w-16 h-16 rounded-full">
+            </div>
+        </div>
+
+        <div class="top2 w-full mt-4 min-w-[400px]">
+            <h3 class="text-2xl font-bold  my-4">Recent Updates</h3>
+            <div class=" w-full h-full recent">
+                <div class="p-8 flex gap-5 items-center">
+                    <div class="w-16 h-16 rounded-full shrink-0">
+                        <img src="./img/profile-2.jpg" alt="" class="w-16 h-16 rounded-full">
+                    </div>
+                    <div class="">
+                        <p class="dark-info"><b class="dark">Mike Tyson </b>received his order of Night lion tech GPS drone.</p>
+                        <small class="dark-info">2 Minutes Ago</small>
+                    </div>
+                </div>
+
+                <div class="px-8 flex gap-5 items-center">
+                    <div class="w-16 h-16 rounded-full shrink-0">
+                        <img src="./img/profile-3.jpg" alt="" class="w-16 h-16 rounded-full">
+                    </div>
+                    <div class="">
+                        <p class="dark-info"><b class="dark">Diana Ayi </b>Declined her order of 2 DJI Air 2S.</p>
+                        <small class="dark-info">5 Minutes Ago</small>
+                    </div>
+                </div>
+
+                <div class="p-8 flex gap-5 items-center">
+                    <div class="w-16 h-16 rounded-full shrink-0">
+                        <img src="./img/profile-4.jpg" alt="" class="w-16 h-16 rounded-full">
+                    </div>
+                    <div class="">
+                        <p class="dark-info"><b class="dark">Mike Tyson </b>received his order of LARVENDER KF102 Drone.</p>
+                        <small class="dark-info">8 Minutes Ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sales-analytics w-full mt-6">
+            <h3 class="text-2xl font-bold  my-4">Sales Analytics</h3>
+            <div class="top3">
+                <div class="flex justify-evenly items-center recent py-8">
+                    <div class="bg-primary w-12 h-12 rounded-full">
+                        <span class="material-icons-sharp text-3xl w-12 h-12 rounded-full bg-primary p-2 text-center text-white">shopping_cart</span>
+                    </div>
+                    <div class="-ml-4 recent-para">
+                        <p class="font-bold">ONLINE ORDERS</p>
+                        <small class="dark-info">Last 24 Hours</small>
+                    </div>
+                    <div class="">
+                        <p class="success font-bold">+35%</p>
+                    </div>
+                    <div class="numbers">
+                        <p class="font-bold">3849</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-evenly items-center recent py-8">
+                    <div class="bg-primary w-12 h-12 rounded-full">
+                        <span class="material-icons-sharp text-3xl w-12 h-12 rounded-full bg-danger p-2 text-center text-white">local_mall</span>
+                    </div>
+                    <div class="-ml-4 recent-para">
+                        <p class="font-bold">OFFLINE ORDERS</p>
+                        <small class="dark-info">Last 24 Hours</small>
+                    </div>
+                    <div class="">
+                        <p class="danger font-bold">-17%</p>
+                    </div>
+                    <div class="numbers">
+                        <p class="font-bold">3849</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-evenly items-center recent py-8">
+                    <div class="bg-primary w-12 h-12 rounded-full">
+                        <span class="material-icons-sharp text-3xl w-12 h-12 rounded-full bg-success p-2 text-center text-white">person</span>
+                    </div>
+                    <div class="-ml-4 recent-para">
+                        <p class="font-bold">NEW CUSTOMER</p>
+                        <small class="dark-info">Last 24 Hours</small>
+                    </div>
+                    <div class="">
+                        <p class="success font-bold">+29%</p>
+                    </div>
+                    <div class="numbers">
+                        <p class="font-bold">3849</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="w-full py-6 border-2 border-dashed mt-4 rounded-2xl primary text-lg flex justify-center items-center gap-4 font-bold">
+            <span class="material-icons-sharp">add</span>
+            Add Product
+        </button>
+    </div>
+
+<script src="./JS/orders.js"></script>
+<script src="./JS/script.js"></script> 
+</body>
+</html>
