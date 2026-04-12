@@ -44,6 +44,9 @@
     list-style: none;
     box-sizing: border-box;
 }
+html {
+    font-size: 90%;
+}
 aside h3 {color: var(--color-info-dark)};
 body {
     width: 100vw;
@@ -98,21 +101,17 @@ main svg circle {
     stroke: var(--color-primary);
     stroke-width: 14;
     stroke-linecap: round;
-    transform: translate(8px, 8px);
-    stroke-dasharray: 110;
-    stroke-dashoffset: 92;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 226;
 }
 main .sales circle {
-    stroke-dasharray: 200;
-    stroke-dashoffset: -30;
+    stroke-dashoffset: 43;
 }
 main .expenses circle {
-    stroke-dasharray: 80;
-    stroke-dashoffset: 20;
+    stroke-dashoffset: 85;
 }
 main .income circle {
-    stroke-dasharray: 110;
-    stroke-dashoffset: 35;
+    stroke-dashoffset: 126;
 }
 main .insights .number {
     position: absolute;
