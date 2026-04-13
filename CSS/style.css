@@ -133,7 +133,7 @@ main .insights .number {
     color: white;
 }
 /* ============================media query=============================== */
-@media screen and (max-width: 940px) and (min-width: 588px) {
+@media screen and (max-width: 1200px) and (min-width: 588px) {
     .asiders h3 {
         display: none;
     }
@@ -151,12 +151,14 @@ main .insights .number {
         position: absolute;
         left: 5%;
         top: 125%;
+        padding-right: 5%;
     }
     .recent-orders table {
         min-width: 1020px;
     }
     .recent-orders a {
-        min-width: 1000px;
+        min-width: 1020px;
+        padding-bottom: 5%;
     }
 }
 
